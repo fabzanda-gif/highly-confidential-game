@@ -1,4 +1,3 @@
-# highly-confidential-game
 # Highly Confidential
 
 A two-player asynchronous investigation game set during the Cold War.
