@@ -170,14 +170,13 @@ def render_lobby():
             st.session_state.opponent_name = "Agent Nightingale"
             st.rerun()
 
-    st.button(
+    if st.button(
         "Begin case briefing",
         type="primary",
         use_container_width=True,
         disabled=not bool(st.session_state.opponent_name),
-        on_click=go_to,
-        args=("briefing",),
-    )
+    ):
+        go_to("briefing")
 
     if st.button("Leave operations room", use_container_width=True):
         go_to("match_options")
